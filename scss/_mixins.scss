@@ -1,0 +1,18 @@
+@mixin font($font-sixe: 22px, $line-height: 24px, $font-weight: 400, $font-style: normal) {
+    font-size: $font-sixe;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin tablet {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width) {
+        @content;
+    }
+}
