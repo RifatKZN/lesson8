@@ -1,0 +1,330 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.card__input {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__info {
+    margin-top: 96px;
+    margin-bottom: 128px;
+
+    @include tablet {
+        margin-top: 60px;
+        margin-bottom: 64px;
+    }
+
+    @include mobile {
+        width: 360px;
+        margin-bottom: 48px;
+    }
+}
+
+.card__img {
+    @include mobile {
+        width: 48%;
+        min-height: 188px;
+    }
+}
+
+.card__info-two {
+    margin-top: 113px;
+
+    @include tablet {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        margin-bottom: 96px;
+    }
+}
+
+.card__list {
+    display: flex;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 30px rgba(120, 117, 122, 0.49);
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.card__heading {
+    width: 210px;
+    padding: 22px 0 42px 31px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    text-transform: uppercase;
+    
+    @include mobile {
+        width: 140px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 13px 0 25px 17px;
+    }
+}
+
+.card__item {
+    width: 390px;
+    min-height: 306px;
+
+    @include tablet {
+        width: 100%;
+        min-height: 306px;
+    }
+
+    @include mobile {
+        min-height: 188px;
+    }
+}
+
+.card__text {
+    padding: 0 0 6px 31px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 0 4px 17px;
+    }
+}
+
+.card__zack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__button-img {
+    fill: #575757;
+}
+
+.card__button-img:active {
+    fill: #F16D7F;
+}
+
+.card__input-box {
+    width: 43px;
+    height: 24px;
+    text-align: center;
+    margin-left: 24px;
+    border: 1px solid #EAEAEA;
+}
+
+.card__input-box:focus,
+.card__input-box:hover {
+    outline: 2px solid #A4A4A4;
+}
+
+.card__butoon {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        margin-top: 62px;
+        justify-content: space-around;
+    }
+
+    @include mobile {
+        margin-top: 30px;
+    }
+}
+
+.card__button-item {
+    height: 30px;
+    margin: 28px 22px 0 0;
+    border: none;
+    background: none;
+
+    @include mobile {
+        margin: 10px 0 0 0;
+    }
+}
+
+.card__box {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 15px 40px 15px 40px;
+    background: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    text-transform: uppercase;
+
+    @include mobile {
+        padding: 8px 17px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.card__box:active {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+}
+
+.cart__input-head {
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.card__input-live {
+    width: 360px;
+    height: 44px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 20px;
+    border: 1px solid #A4A4A4;
+}
+
+.card__input-live:focus {
+    outline: 2px solid;
+    opacity: 0.5;
+}
+
+.card__button-box {
+    width: 100px;
+    height: 34px;
+    border: 1px solid #A4A4A4;
+    background: #FFFFFF;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 54px;
+    text-transform: uppercase;
+
+    @include mobile {
+        margin-bottom: 0;
+    }
+}
+
+.card__button-box:active {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+}
+
+.card__payment {
+    width: 360px;
+    min-height: 214px;
+    background-color: rgba(231, 228, 228, 0.86);
+
+    @include tablet {
+        margin-top: 35px;
+        width: 360px;
+        height: 214px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 214px;
+        margin-top: 48px;
+    }
+}
+
+.card__payment-img {
+    position: absolute;
+    margin-left: 44px;
+    fill: #c3c1c1;
+}
+
+.card__payment-text1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    padding: 34px 0 12px 215px;
+    text-transform: uppercase;
+}
+
+.card__mini {
+    padding-left: 20px;
+}
+
+.card__payment-text2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-left: 153px;
+    padding-bottom: 21px;
+    text-transform: uppercase;
+}
+
+.card__mini2 {
+    padding-left: 20px;
+    color: #F16D7F;
+}
+
+.card__payment-button {
+    background: #F16D7F;
+    border: none;
+    margin-top: 17px;
+    margin-left: 44px;
+    margin-bottom: 42px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 15px 43px;
+    text-transform: uppercase;
+}
+
+.card__payment-button:active {
+    background-color: blue;
+    color: yellow;
+}
+
+.card__pink {
+    color: #F16D7F;
+}
